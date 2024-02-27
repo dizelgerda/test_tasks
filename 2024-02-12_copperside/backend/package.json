@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/app/index.ts",
+  "scripts": {
+    "start": "ts-node src/app/index.ts",
+    "start:dev": "nodemon src/app/index.ts",
+    "lint": "npx eslint src",
+    "lint:fix": "npx prettier src --write && npx eslint src --fix",
+    "db:seed": " npm run db:migrations && ts-node ./src/db/seed/index.ts",
+    "db:reset": "npm run db:drop && npm run db:seed",
+    "db:migrations": "drizzle-kit generate:sqlite",
+    "db:drop": "rm -f ./*.db"
+  },
+  "author": "Daniil Kovalenko",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "better-sqlite3": "^9.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.2",
+    "drizzle-orm": "^0.29.3",
+    "express": "^4.18.2",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.9",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "nodemon": "^3.0.3",
+    "prettier": "3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
