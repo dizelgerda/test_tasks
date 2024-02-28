@@ -1,0 +1,19 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --main-bg-color: gainsboro;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
