@@ -1,0 +1,42 @@
+.card {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 15px;
+  background-color: dimgray;
+  border-radius: 10px;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  &.card_selected {
+    opacity: 1;
+    background-color: rgb(86, 110, 182);
+    cursor: default;
+  }
+
+  .card__title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .card__badges {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    gap: 10px;
+
+    .card__badge {
+      font-size: 0.8em;
+      padding: 5px 8px;
+      color: rgb(212, 212, 212);
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      border-radius: 5px;
+    }
+  }
+}

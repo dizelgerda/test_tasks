@@ -1,0 +1,35 @@
+@function getRobotoPath($width) {
+  @return "https://fonts.googleapis.com/css2?family=Roboto:wght@#{$width}&display=swap";
+}
+
+@font-face {
+  $weight: 300;
+  font-family: "Roboto";
+  font-weight: $weight;
+
+  src: url(getRobotoPath($weight));
+}
+
+@font-face {
+  $weight: 400;
+  font-family: "Roboto";
+  font-weight: $weight;
+
+  src: url(getRobotoPath($weight));
+}
+
+@font-face {
+  $weight: 700;
+  font-family: "Roboto";
+  font-weight: $weight;
+
+  src: url(getRobotoPath($weight));
+}
+
+@font-face {
+  $weight: 900;
+  font-family: "Roboto";
+  font-weight: $weight;
+
+  src: url(getRobotoPath($weight));
+}

@@ -1,0 +1,24 @@
+@import "../vendor/normalize.css";
+@import "./colors";
+@import "./fonts";
+
+html {
+  height: 100%;
+
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: $background_color;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
