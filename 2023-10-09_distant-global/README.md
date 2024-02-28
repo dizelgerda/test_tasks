@@ -14,9 +14,9 @@
 
 ## Стек
 
-**Backend:** Express.JS, TypeScript, MongoDB.
+**Backend:** Express.JS, TypeScript, MongoDB, ESlint + Prettier.
 
-**Frontend:** Next.JS (React), Redux Toolkit, Bootstrap.
+**Frontend:** Next.JS (React), Redux Toolkit, Bootstrap, ESlint + Prettier.
 
 ## Запуск
 

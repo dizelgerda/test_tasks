@@ -4,6 +4,6 @@
 
 ## Стек
 
-Frontend: TypeScrypt, NextJS, TanStack.
+Frontend: TypeScrypt, NextJS, TanStack, ESlint + Prettier.
 
-Backend: TypeScrypt, ExpressJS, Drizzle ORM.
+Backend: TypeScrypt, ExpressJS, Drizzle ORM, ESlint + Prettier.
